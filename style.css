@@ -1,0 +1,276 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 59px;
+}
+
+* {
+    font-family: 'Shippori Antique B1', sans-serif;
+    font-family: 'Shizuru', cursive;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 128%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul {
+    display: flex;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: medium;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/* background of navbar */
+
+/* Home section */
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('background.jpg') no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 68%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.7; */
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 300px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#home h1 {
+    color: rgb(255, 246, 246);
+    text-align: center;
+}
+
+.primaryheading {
+    font-size: 3.5rem;
+    padding: 10px;
+    margin: 54px;
+
+}
+
+#home p {
+    color: white;
+    margin: 8px;
+    font-size: 1.rem;
+
+}
+
+#home #btn {
+    padding: 8px;
+    margin: 15px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background-color: rgb(214 96 3);
+    color: white;
+}
+
+#home #btn:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgb(148 67 4);
+}
+
+/* services section */
+
+.secondaryhead {
+    font-size: 2rem;
+    padding: 10px;
+
+}
+
+.centre {
+    text-align: center;
+}
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid red;
+    padding: 20px;
+    margin: 8px 20px;
+    border-radius: 15px;
+    background-color: #f3eee8;
+}
+
+#services :hover {
+-webkit-box-shadow: 3px 5px 50px 3px rgba(255,205,86,0.57); 
+box-shadow: 3px 5px 50px 3px rgba(255,205,86,0.57);
+}
+#order{
+    margin: auto;
+   display: block;
+   height: 25%;
+    width: 24%;
+}
+#catering {
+    margin: auto;
+    display: block;
+    height: 26%;
+    width: 30%;
+}
+#bulk{
+    margin: auto;
+   display: block;
+   height: 28%;
+   width: 24%;
+}
+
+
+/* Client section */
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client :hover {
+    /* -webkit-box-shadow: 3px 5px 50px -2px rgba(0,0,0,0.54); 
+    box-shadow: 3px 5px 50px -2px rgba(0,0,0,0.54); */
+    -webkit-box-shadow: 3px 5px 50px -6px rgba(143,64,203,0.59); 
+box-shadow: 3px 5px 50px -6px rgba(143,64,203,0.59);
+}
+
+#client-section {
+    position: relative;
+    height: 409px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(221 218 218);
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.client-item {
+    padding: 30px;
+    border: 2px solid #663399;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+/* FORM */
+#contact {
+    position: relative;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 20%;
+    margin-left: 2px;
+
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    background-color: rgb(113 164 231);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#contact-form {
+    display: block
+}
+
+#contact-form input {
+    width: 100%;
+    padding: 5px;
+}
+
+#contact-form textarea {
+    width: 100;
+    padding: 5px;
+}
+
+#contact-form .form {
+    width: 70%;
+}
+
+#contact-form .form label {
+    width: 82%;
+}
+
+#btn {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 2px;
+    margin-left: 100px;
+}
+
+#btn:hover {
+    background-color: black;
+    color: white;
+}
+
+/* footer */
+footer {
+    background-color: black;
+    color: white;
+    font-size: 10px;
+    padding: 5px 5px;
+    margin-top: 2px;
+
+}

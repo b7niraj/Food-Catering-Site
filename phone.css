@@ -1,0 +1,33 @@
+/* Navigation */
+#navbar{
+    flex-direction: column;
+}
+
+
+
+body{
+    background-color: red;
+}
+
+/* classes */
+
+/* Home */
+#home{
+    
+    height: 605px;
+    padding: 3px 10px;
+}
+#home p{
+    font-size: 13px;
+}
+
+#home::before{
+    height: 707px;
+}
+
+/* Services */
+#services{
+    flex-direction: column;
+}
+
+/* clients */
